@@ -14,7 +14,7 @@ Example provided on [https://github.com/Marclavos/SH1106-ESP-IDF/SH1106/example/
 ```c
 #include "sh1106.h"
 
-const uint8_t customBitmap = {
+const uint8_t customBitmap[] = {
   // ......
 };
 
