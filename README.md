@@ -20,6 +20,19 @@ const uint8_t customBitmap[] = {
 
 void app_main(void)
 {
+    /* Master bus configuration */
+    i2c_config_t conf = {
+        .mode = I2C_MODE_MASTER,
+        .sda_io_num = PIN_SDA,
+        .sda_pullup_en = GPIO_PULLUP_ENABLE,
+        .scl_io_num = PIN_SCL,
+        .scl_pullup_en = GPIO_PULLUP_ENABLE,
+        .master.clk_speed = CLK_SPEED
+    };
+    // Driver
+    i2c_param_config(I2C_NUM_0, &conf);
+    i2c_driver_install(I2C_NUM_0, conf.mode, 0, 0, 0);
+
     // Initialize I2C and the SH1106 display
     sh1106_init();
 
