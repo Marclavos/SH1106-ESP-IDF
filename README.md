@@ -9,7 +9,7 @@ A lightweight, highly optimized 2D graphics and text engine for SH1106 OLED disp
 * **2D Primitives & Bitmaps:** Built-in functions to draw pixels, rectangles, filled shapes, and custom monochrome bitmaps.
 
 ## Quick start example
-Example provided on https://github.com/Marclavos/SH1106-ESP-IDF/SH1106/example/main.c
+Example provided on [https://github.com/Marclavos/SH1106-ESP-IDF/SH1106/example/main.c](https://github.com/Marclavos/SH1106-ESP-IDF/blob/main/SH1106/example/main.c)
 
 ```c
 #include "sh1106.h"
