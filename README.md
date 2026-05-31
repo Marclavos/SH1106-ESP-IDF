@@ -33,8 +33,8 @@ void app_main(void)
     sh1106_drawString(4, 4, "Main Menu", SH1106_COLOR_WHITE, 1, false);
     sh1106_drawString(4, 20, "Option 1", SH1106_COLOR_WHITE, 1, true); // Inverted mode
 
-    Flush buffer to screen
-    sh1106_display();
+    // Flush buffer to screen
+    sh1106_update();
 }
 ```
 
