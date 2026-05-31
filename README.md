@@ -41,5 +41,6 @@ void app_main(void)
 ## Installation
 1. Create a directory called `components` in your main project directory.
 2. Change into the components directory.
-3. Run git clone `https://github.com/Marclavos/SH1106-ESP-IDF/SH1106/components.git`
-4. Compile with `idf.py build`
+3. Run `git clone https://github.com/Marclavos/SH1106-ESP-IDF.git`
+4. Copy the SH1006 `cp -r SH1106-ESP-IDF/SH1106/components/sh1106/ .`
+5. Remove the example `rm -rf SH1106-ESP-IDF`
